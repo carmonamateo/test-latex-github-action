@@ -19,7 +19,6 @@ jobs:
         path: main.pdf
   deploy:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
     needs: [build]
     steps:
       - name: Set variables
