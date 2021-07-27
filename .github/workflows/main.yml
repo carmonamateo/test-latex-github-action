@@ -10,7 +10,6 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: main.tex
-        working_directory: /
         args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
         compiler: latexmk
     - name: Upload PDF artifact
