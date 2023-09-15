@@ -1,23 +1,23 @@
 name: PDF release (via LaTeX)
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v3  # Updated to use version 3
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16'  # Updated to use Node.js version 16
+      uses: actions/checkout@v2
+
+    - name: Install TeX Live
+      run: |
+        sudo apt-get install -y texlive
+
     - name: Compile LaTeX
       run: |
-        latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
+        xelatex -interaction=nonstopmode main.tex
+        xelatex -interaction=nonstopmode main.tex
+
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v2
       with:
