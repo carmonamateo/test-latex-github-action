@@ -5,13 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v2.3.2
-    - name: Compile LaTeX
-      uses: xu-cheng/latex-action@v2
+      uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
       with:
-        root_file: main.tex
-        args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
-        compiler: latexmk
+        node-version: '16'
+    - name: Compile LaTeX
+      run: |
+        latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v2
       with:
