@@ -5,13 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  # Reference a specific version compatible with Node 16
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v2  # Reference a specific version compatible with Node 16
       with:
-        node-version: '12'  # <-- Updated this line to use Node.js version 12
-      env:
-        ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # <-- Added this line to allow Node 12
+        node-version: '16'
     - name: Compile LaTeX
       run: |
         latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode main.tex
@@ -31,11 +29,11 @@ jobs:
           echo "::set-output name=date::$(date +'%Y-%m-%d')"
           echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v2  # Reference a specific version compatible with Node 16
         with:
           name: pdf_file
       - name: Create release
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1  # Reference a specific version compatible with Node 16
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,7 +43,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload PDF asset
-        uses: actions/upload-release-asset@v1
+        uses: actions/upload-release-asset@v1  # Reference a specific version compatible with Node 16
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
