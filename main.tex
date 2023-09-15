@@ -130,7 +130,277 @@
   pdflang={fr}
 }
 
-\input{defs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand*\isommap{%
+%  \xrightarrow{\raisebox{-0.2 em}{\smash{\ensuremath{\sim}}}}%
+%}
+
+\newcommand*\isommap{\xlongrightarrow{\sim}}
+
+\newcommand*\isomlong{%
+  \xlongrightarrow{\raisebox{-0.2 em}{\smash{\ensuremath{\sim}}}}%
+}
+	% letters
+	\newcommand{\PP}{\mathbf{P}}
+%	\newcommand{\RR}{\mathbf{R}}
+	\renewcommand{\AA}{\mathbf{A}}
+	%\newcommand{\ZZ}{\mathbf{Z}}
+    %\newcommand{\Q}{\mathbf{Q}}
+	%\newcommand{\NN}{\mathbf{N}}	
+	%\newcommand{\QQ}{\mathbb{Q}}	
+	%\newcommand{\QQ}{\mathbf{Q}}	
+	\newcommand{\Aa}{\mathscr{A}}	
+	\newcommand{\Kk}{\mathscr{K}}	
+	%\newcommand{\BB}{\mathbb{B}}	
+	\newcommand{\FF}{\mathbf{F}}
+	\newcommand{\bHom}{\mathbf{\Hom}}
+	\newcommand{\Hh}{\mathscr{H}}	
+	\newcommand{\Xx}{\mathscr{X}}	
+	\newcommand{\Gg}{\mathscr{G}}	
+	\newcommand{\GG}{\mathbf{G}}	
+	\newcommand{\Ee}{\mathscr{E}}	
+%	\newcommand{\Ll}{\mathscr{L}}	
+	\newcommand{\Mm}{\mathscr{M}}	
+	\newcommand{\mm}{\mathfrak{m}} %{\mathfrak{m}}	
+    \newcommand{\pp}{\wp}	
+	\newcommand{\Ff}{\mathscr{F}}	
+	\newcommand{\Oo}{\mathscr{O}}	
+	\newcommand{\Cc}{\mathscr{C}}	
+	%\newcommand{\CC}{\mathbf{C}}
+    
+    \newcommand{\bfGr}{\mathbf{Gr}}
+    \newcommand{\bfFl}{\mathbf{Fl}}
+    \newcommand{\bfCart}{\mathbf{Cart}}
+    \newcommand{\cHom}{\mathcal{H}om}
+    
+	\newcommand{\bari}{\bar\imath}
+	\newcommand{\barj}{\bar\jmath}
+	
+	
+	
+	
+	\newcommand{\cO}{\mathcal{O}}
+	
+
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\rs}{{\rho,\sigma}}
+\newcommand{\rsp}{{\rho'\!,\,\sigma'}}
+\newcommand{\rsn}{{\rho_0,\sigma_0}}
+\newcommand{\Spwnd}{\Sfk^{+\,\wdg}_{0,3}}
+\newcommand{\Spw}{\Sfk^{+\,\wdg}}
+\newcommand{\lrasurj}{\begin{picture}(80,17)
+                      \put(10,10){\vector(1,0){60}}
+                      \put(60,10){\vector(1,0){0}}
+                      \end{picture}}
+\DeclareMathOperator{\inte}{int}
+\newcommand{\jj}{\ol{\mb{\it\j}}}
+\newcommand{\sjj}{\ol{\mb{\scr\it\j}}}
+%\renewcommand{\Kern}{\operatorname{Ker}}
+
+
+
+	
+    
+    %%%%%
+    %\def\Z{\Bbb Z}
+    \def\gT{{\textfrak T}}
+    \def\gG{{\textfrak G}}
+    \def\gS{{\textfrak S}}
+    \def\gA{{\textfrak A}}
+	\def\gP{{\textfrak P}}
+	\def\cD{{\cal D}}
+	%\def\cN{{\cal N}}
+	%\def\cM{{\cal M}}
+	%\def\cU{{\cal U}}
+	%\def\cG{{\cal G}}
+	%\def\cH{{\cal H}}
+	%\def\cJ{{\cal J}}
+	%\def\cE{{\cal E}}
+	%\def\cT{{\cal T}}
+	%\def\gn{{g,\nu}}
+	%\def\GG{{{\rm I}\!\Gamma}}
+    
+
+    
+    
+    %\newcommand{\Z}{\mathbb{Z}}
+	%\newcommand{\Q}{\mathbb{Q}}
+	%\newcommand{\C}{\mathbb{C}}
+	%\newcommand{\B}{\operatorname{B}}
+	\newcommand{\K}{\operatorname{K}}
+	\renewcommand{\P}{\mathbb{P}}
+    
+	% operators
+	\renewcommand{\bar}{\overline}
+	\newcommand{\et}{{\rm\acute{e}t}}
+	\newcommand{\an}{{\rm an}}
+	\newcommand{\ket}{{\rm k\et}}
+	\newcommand{\fet}{{\rm f\et}}
+	%\newcommand{\Et}{\acute{E}t}
+	\DeclareMathOperator{\Gal}{Gal}
+	\DeclareMathOperator{\Sh}{Sh}
+	\DeclareMathOperator{\gr}{gr}
+	\DeclareMathOperator{\ev}{ev}
+	\DeclareMathOperator{\Img}{Im}
+	\DeclareMathOperator{\cone}{cone}
+	\DeclareMathOperator{\Star}{Star}
+	\DeclareMathOperator{\coker}{coker}
+	\DeclareMathOperator{\chara}{char}
+	\DeclareMathOperator{\Hom}{Hom}
+	\DeclareMathOperator{\Hhom}{{\mathscr{H}om}}
+	\DeclareMathOperator{\Ext}{Ext}
+	\DeclareMathOperator{\Tor}{Tor}
+	\DeclareMathOperator{\Frac}{Frac}
+	\DeclareMathOperator{\Eext}{\Ee{}xt}
+	\DeclareMathOperator{\rank}{rank}
+	\DeclareMathOperator{\Spec}{Spec}
+	\DeclareMathOperator{\Gr}{Gr}
+	\DeclareMathOperator{\Proj}{Proj}
+	\DeclareMathOperator{\Pic}{Pic}
+	\DeclareMathOperator{\Cl}{Cl}
+	\DeclareMathOperator{\height}{ht}
+	\DeclareMathOperator{\Div}{Div}
+	\DeclareMathOperator{\codim}{codim}
+	\DeclareMathOperator{\Def}{Def}
+	\DeclareMathOperator{\Inf}{Inf}
+	\DeclareMathOperator{\Set}{Set}
+	\DeclareMathOperator{\Ab}{Ab}
+	\DeclareMathOperator{\colim}{colim}
+	\DeclareMathOperator{\Art}{Art}
+	\DeclareMathOperator{\ass}{ass}
+	\DeclareMathOperator{\supp}{supp}
+	\DeclareMathOperator{\ArtFk}{Art^F_k}
+	\DeclareMathOperator{\ArtFW}{Art^F_W}
+	\DeclareMathOperator{\Tube}{Tube}
+	\DeclareMathOperator{\Swan}{Swan}
+    \DeclareMathOperator{\B}{B}
+    \DeclareMathOperator{\Sch}{Sch}
+    \DeclareMathOperator{\Mor}{Mor}
+    \DeclareMathOperator{\Cart}{Cart}
+    \DeclareMathOperator{\CART}{CART}
+    \DeclareMathOperator{\Arr}{Arr}
+    \DeclareMathOperator{\Ob}{Ob}
+    \DeclareMathOperator{\MOR}{MOR}
+    \DeclareMathOperator{\HH}{H}
+    \DeclareMathOperator{\RR}{R}
+    \DeclareMathOperator{\Ens}{Ens}
+    \DeclareMathOperator{\Pt}{Pt}
+    \DeclareMathOperator{\Aut}{Aut}
+    \DeclareMathOperator{\Tors}{Tors}
+    \DeclareMathOperator{\Ker}{Ker}
+    \DeclareMathOperator{\Autext}{Autext}
+    \DeclareMathOperator{\Centr}{Centr}
+    \DeclareMathOperator{\Norm}{Norm}
+    \DeclareMathOperator{\id}{id}
+    \DeclareMathOperator{\Fig}{Fig}
+    \DeclareMathOperator{\Hdg}{Hdg}
+    \DeclareMathOperator{\Filt}{Filt}
+    \DeclareMathOperator{\Sl}{Sl}
+    \DeclareMathOperator{\Ic}{Ic}
+    \DeclareMathOperator{\pr}{pr}
+    %\DeclareMathOperator{\or}{or}
+    \DeclareMathOperator{\Bic}{Bic}
+    \DeclareMathOperator{\DR}{DR}
+    \DeclareMathOperator{\Drap}{Drap}
+    \DeclareMathOperator{\Gl}{Gl}
+    \DeclareMathOperator{\cl}{cl}
+    \DeclareMathOperator{\Tr}{Tr}
+    \DeclareMathOperator{\BT}{BT}
+    \DeclareMathOperator{\Cat}{Cat}
+    \DeclareMathOperator{\DRS}{DRS}
+    \DeclareMathOperator{\Ssimpl}{Ssimpl}
+    \DeclareMathOperator{\Ss}{Ss}
+    \DeclareMathOperator{\D}{D}
+    \DeclareMathOperator{\R}{R}
+    %\DeclareMathOperator{\L}{L}
+    \DeclareMathOperator{\Isom}{Isom}
+    \DeclareMathOperator{\card}{card}
+    \DeclareMathOperator{\car}{car}
+    \DeclareMathOperator{\Sym}{Sym}
+    \DeclareMathOperator{\Fil}{Fil}
+    \DeclareMathOperator{\Alb}{Alb}
+    \DeclareMathOperator{\Fcriso}{Fcriso}
+    \DeclareMathOperator{\Bet}{Bet}
+    \DeclareMathOperator{\End}{End}
+    \DeclareMathOperator{\Card}{Card}
+    \DeclareMathOperator{\Fl}{Fl}
+    \DeclareMathOperator{\Diag}{Diag}
+    \DeclareMathOperator{\inj}{inj}
+    \DeclareMathOperator{\Rev}{Rev}
+    \DeclareMathOperator{\diag}{diag}
+    \DeclareMathOperator{\Oub}{Oub}
+    \DeclareMathOperator{\Top}{Top}
+    \DeclareMathOperator{\Coker}{Coker}
+    \DeclareMathOperator{\Mod}{Mod}
+    \DeclareMathOperator{\Coim}{Coim}
+    %\DeclareMathOperator{\Coker}{Coker}
+    \DeclareMathOperator{\Bil}{Bil}
+    \DeclareMathOperator{\Der}{Der}
+    \DeclareMathOperator{\frob}{frob}
+    \DeclareMathOperator{\Id}{Id}
+    \DeclareMathOperator{\Isbicr}{Isbicr}
+    \DeclareMathOperator{\Bicr}{Bicr}
+    \DeclareMathOperator{\Topcr}{Topcr}
+    \DeclareMathOperator{\Lie}{Lie}
+    \DeclareMathOperator{\Corr}{Corr}
+    \DeclareMathOperator{\Br}{Br}
+    \DeclareMathOperator{\Omb}{Omb}
+    \DeclareMathOperator{\Coh}{Coh}
+    \DeclareMathOperator{\Ind}{Ind}
+    \DeclareMathOperator{\Hot}{Hot}
+    \DeclareMathOperator{\Aff}{Aff}
+    \DeclareMathOperator{\Et}{Et}
+    \DeclareMathOperator{\Fib}{Fib}
+    \DeclareMathOperator{\Op}{Op}
+    \DeclareMathOperator{\Dyn}{Dyn}
+    \DeclareMathOperator{\Presh}{Presh}
+    \DeclareMathOperator{\Crismodloclib}{Crismodloclib}
+
+\def\Rd{\mathrm{R}}\def\Ld{\mathrm{L}}%    
+
+	% symbols
+	\newcommand{\isom}{\simeq}
+	\newcommand{\xto}{\xrightarrow}
+	\newcommand{\dual}{\vee}
+	\newcommand{\pt}{{pt.}}
+	\renewcommand{\phi}{\varphi}
+	\renewcommand{\emptyset}{\varnothing}
+	\renewcommand{\epsilon}{\varepsilon}
+	\renewcommand{\tilde}{\widetilde}
+	\newcommand{\sto}{{\xto{}}}
+	\renewcommand{\to}{\longrightarrow}
+	\newcommand{\und}{\underline}
+	\newcommand{\indown}{\mathrel{\rotatebox[origin=c]{-90}{$\in$}}}
+
+	% comments
+	%\newcommand{\comment}[1]{\textcolor{blue}{[#1]}}
+
+	% stacks project references
+	\newcommand{\stacks}[1]{\cite[\href{http://stacks.math.columbia.edu/tag/#1}{Tag #1}]{stacks-project}}
+
+	% environments
+	\theoremstyle{plain}
+		\newtheorem{lemma}{Lemma}[section]
+		\newtheorem{corollary}[lemma]{Corollary}
+		\newtheorem{proposition}[lemma]{Proposition}
+		\newtheorem{theorem}[lemma]{Theorem}
+		\newtheorem*{theorem*}{Theorem}
+		\newtheorem*{corollary*}{Corollary}
+		\newtheorem{conjecture}{Conjecture}
+	\theoremstyle{definition}
+		\newtheorem{definition}[lemma]{Definition}
+		\newtheorem{example}[lemma]{Example}
+		\newtheorem{remark}[lemma]{Remark}
+		\newtheorem{construction}[lemma]{Construction}
+        
+        \def\rinto{\HorizontalMap\rthooka-\empty-\rhla}%%
+		\def\linto{\HorizontalMap\lhla-\empty-\lthooka}%%
+		\def\dinto{\VerticalMap\dthookb|\empty|\dhla}%%
+		\def\uinto{\VerticalMap\uhla|\empty|\uthookb}%%
+        
+        
+\newcommand*{\defeq}{\stackrel{\text{def}}{=}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \makeatletter
 \newcommand*{\toccontents}{\@starttoc{toc}}
