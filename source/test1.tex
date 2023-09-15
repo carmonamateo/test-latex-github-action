@@ -1,0 +1,284 @@
+% Begin
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter*{II. LA QUESTIONS DE PLEINE FIDÉLITÉ}
+\addcontentsline{toc}{chapter}{II. --- La question de pleine fidélité}
+\label{ch:1950}
+\section*{}
+
+%%%%%%%%%20
+Soient $K$, $K'$ deux extensions de type fini de $\mathbf{Q}$ --- est-il vrai
+que tout $\Pi_{\mathbf{Q}}$\nobreakdash-homo\-morphisme $\Pi_{K'} \to \Pi_K$ 
+provient d'un homomorphisme de corps $K' \to K$\,? On est ramené 
+aussitôt au cas où --- une clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$ 
+étant choisie, d'où un $\Gamma_{\overline{\mathbf{Q}}/\mathbf{Q}}$ ---  $K$ et $K'$ 
+ont des sous-corps $k$, $k'$ (clôture algébrique de $\mathbf{Q}$ dans $K$
+resp.\ $K'$) isomorphes, avec des plongements $k,\,k'\,\to\,\mathbf{Q}$ 
+%{\tt [vraiment $\to\mathbf{Q}$?]} 
+de même image, que $E_K$ et $E_{K'}$ peuvent être considérés comme
+des extensions d'un même groupe $\Gamma = \Gamma_{\overline{\mathbf{Q}}/k}$
+par $\pi_K$ resp.\ $\pi_{K'}\,$. La question est alors si {\it tout}
+homomorphisme de $\pi_{K'}$ dans $\pi_K$ qui commute à l'action de 
+$\Gamma$, est induit par un homomorphisme $K \hookrightarrow K'$. 
+Pour construire ce dernier, il faudrait donc avoir une idée comment 
+reconstruire $K$, $K'$ à partir des extensions $E_K$, $E_{K'}\,$, ou 
+encore à partir des groupes profinis extérieurs avec opération de 
+$\Gamma$ dessus. Et on pressent que le Théorème~3 du paragraphe 
+précédent (appliqué notamment à $\P^1_K$ convenablement 
+troué\,\dots)\ pourrait donner la clef d'une telle construction.
+
+Bien sûr, des homomorphismes extérieurs quelconques 
+$\pi_{K'} \to \pi_K$ n'auront pas de sens géométrique --- l'idée est 
+que les opérations du groupe $\Gamma = \Gamma_{\overline{\mathbf{Q}}/k}$ 
+dessus soit si draconienne, qu'il n'est possible de trouver un 
+homomorphisme extérieure qui y commute que par voie géométrique 
+--- par des plongements de corps. Donc il est essentiel ici que le 
+corps de base ne soit pas quelconque, mais un corps tel que $\mathbf{Q}$ (ou,
+ce qui revient manifestement au même, une extension de type fini de 
+$\mathbf{Q}$). Encore faut-il se borner aux homomorphismes 
+$\pi_{K'} \to \pi_K$ dont on décrète d'avance que l'image soit  
+ouverte --- sinon,
+%%%%%%%%%21
+prenant pour $\pi_{K'}$ le groupe unité (i.e. $K' = k$), on 
+trouverait un homomorphisme $K \to k$ correspondant~! Il faut pour le
+moins, pour travailler à l'aise à partir d'homomorphismes 
+$\pi_{K'} \to \pi_K$ (au lieu de $E_{K'} \to E_K$) supposer que le 
+centralisateur dans $\pi_K$ de l'image de tout sous-groupe ouvert de 
+$\pi_{K'}$ soit réduit à $\{1\}$ -- on dira que l'homomorphisme en 
+question est {\it anabélien} alors -- de telle fa\c con qu'à partir 
+de cet homomorphisme (commutant à $\Gamma$) on reconstitue 
+l'homomorphisme d'extensions $E_K$ et $E_{K'}\,$, qui est l'objet 
+vraiment essentiel. Par exemple, si justement $K' = k$, donc 
+$E_{K'} = \Gamma$, ce qui nous intéressera, ce ne seront pas le 
+$\Gamma$-homomorphismes de $\pi_{K'} = \{1\}$ (!) dans $\pi_K$, mais 
+bien les {\it sections} de $E_K$ sur $\Gamma$.
+\vskip .3cm
+{
+Question-conjecture. --- \it Soient $K$, $K'$ deux corps, extensions de
+type fini de $\mathbf{Q}$, et un morphisme $\B_{K'} \to \B_K$ de topos sur
+$\B_{\mathbf{Q}}\,$.
+
+Les conditions suivantes sont-elles bien équivalentes\,{\tt [:]}
+
+\begin{itemize}
+\item[a)] L'homomorphisme provient d'un plongement de corps
+$K\hookrightarrow K'$.
+\item[b)] L'image de l'homomorphisme extérieur $E_{K'} \to E_K$ a 
+une image ouverte.
+\item[c)] L'homomorphisme extérieure $E_{K'} \to E_K$ est 
+anabélien\footnote{c) n'est pas assez fort, cf.\ plus 
+bas\,\dots}.
+\end{itemize}
+}
+\vskip .3cm
+
+{\bf NB}. On sait que (a) $\Rightarrow$ (b) $\Rightarrow$ (c) et que
+(b) équivaut à $\pi_K \to \pi_{K'}$ a une image ouverte.
+
+Une réponse affirmative impliquerait que si 
+$\operatorname{degtr} K'/\mathbf{Q} < \operatorname{degtr} K/\mathbf{Q}$, 
+alors il n'y a pas de tel homomorphisme $E_{K'} \to E_K$, 
+compatible avec les projections dans $E_\mathbf{Q} = \Gamma_\mathbf{Q}$, en 
+particulier, il en résulterait que toute section de $E_K$ sur 
+$\Gamma = \operatorname{Im}(E_K \to \Gamma_{\mathbf{Q}})$, ou sur un 
+sous-groupe ouvert $\Gamma'$ de $\Gamma$, a un centralisateur 
+non-trivial dans $E_K$ -- et comme son centralisateur dans $\Gamma$ 
+est réduit à $\{1\}$, cela impliquerait que pour toute telle section,
+on aurait (si $\pi_K\ne 1$) $\pi_K^{\Gamma'}\rule[4.5mm]{0mm}{0mm}
+\ne \{1\}$. Or je m'aper\c{c}ois que
+%%%%%%%%%22
+ceci est sans doute faux (cf.\ plus bas, numéro 3) - il faudrait
+renforcer (c) ci-dessus en\,{\tt [:]} 
+
+\begin{itemize}
+\item[(c$'$)] L'homomorphisme $E_{K'}^\circ \to E_K$ induit par 
+$E_{K'} \to E_K$ est anabélien (où $E_{K'}^\circ$ est le noyau 
+de l'homomorphisme composé 
+\[
+E_{K'} \to \Gamma_{\overline{\mathbf{Q}}/\mathbf{Q}} \xrightarrow{\text{$\chi$ caractère 
+cyclotomique}} \hat{\mathbf{Z}}^\ast.
+\]
+\end{itemize}
+
+Mais pour voir que cette condition est \emph{nécessaire} pour que
+l'homomorphis\-me soit géométrique, il faudrait vérifier que pour
+tout sous-groupe ouvert $E'$ d'un $E_K$, le centralisateur dans $E_K$
+(non seulement de $E'$ lui-même, mais même de $E'^\circ$) est réduit 
+à $1$ -- ce qui résulte de la démonstration du Théorème~1, et du 
+fait\footnote{à vérifier\,!} que pour tout sous-groupe ouvert 
+$\Gamma'$ de $\Gamma = \Gamma_{\mathbf{Q}}$, le centralisateur (non seulement
+de $\Gamma'$, mais même) de $\Gamma'^\circ$ dans $\Gamma$ est réduit 
+à $\{1\}$.
+
+Donc, la conjecture initiale revue et corrigée donné la
+\vskip .3cm
+{
+Conséquence (conjecturale). --- \it Pour tout section de $E_K$ sur un
+sous-groupe ouvert $\Gamma'$ de $\Gamma_{\mathbf{Q}}$, de sorte que $\Gamma'$
+opère (effectivement) sur $\pi_K$, on a (si $K$ pas algébrique sur
+$\mathbf{Q}$, i.e.\ $\pi_K\ne \{1\}$) $\pi_K^{\Gamma'^\circ} \ne \{1\}$.
+}
+\vskip .3cm
+À vrai dire, à certains égards les $\Gamma_K$ sont des groupes trop
+gros pour pouvoir travailler directement avec, il y a lieu de
+regarder $\Gamma_K$ comme un $\varprojlim$ de groupes $\Gamma_{U/\mathbf{Q}}$
+associés à des modèles affines de $K$ --- et on s'intéressera plus
+particulièrement à des modèles affines qui sont des variétés
+élémentaires --- plus généralement, qui sont des $\K(\pi, 1)$ (au sens
+profini\,\dots). Il est possible qu'il faille d'ailleurs, dans
+l'énonce de la conjecture de départ, prendre un homomorphisme
+extérieur $E_{K'} \to E_K$ dont on suppose d'avance (en plus de
+l'hypothèse anabélienne et de la compatibilité avec les
+homomorphismes dans $\Gamma_\mathbf{Q}$) qu'elle est compatible avec les 
+{\it filtrations}\,\ de ces groupes, associés à ces modèles 
+(``filtration modélique'' (grossière)).
+
+Nous allons alors, au même temps que des extension de type fini de
+$\mathbf{Q}$, les homomorphismes entre tels, et
+%%%%%%%%%23
+homomorphismes de groupes profinis associés, étudier la situation
+analogue pour des ``modèles'' élémentaires anabéliens, voire des
+modèles $\K(\pi, 1)$ généraux. (On peut aussi regarder de tels modèles
+sur un corps $K$, extension de type fini de $\mathbf{Q}$ --- mais passons pour
+le moment sur cette situation mixte, un peu bâtarde\,\dots). Si $U$,
+$V$ sont des tels modèles, tout morphisme $V \to U$ définit un
+morphismes de topos galoisiens sur $\B_\mathbf{Q}$, $\B_{U} \to \B_{V}$, et si
+$U$ est élémentaire anabélien, ce morphisme et connu quand on connaît
+seulement $\operatorname{H}_1(\B_{\bar U},\mathbf{Z}_\ell) \to 
+\operatorname{H}_1(\B_{\bar V},\mathbf{Z}_\ell)$ --- ce qui est beaucoup moins
+que la classe d'isomorphie d'homomorphismes de $\B_\mathbf{Q}$-topos. (En 
+fait, sans hypothèse anabélienne sur $V$, dès que $V$ se plonge dans 
+une variété anabélienne,
+%{\tt [?]}
+$f$ est connu quand on connaît son action sur les topos 
+étales\,\dots). Mais quels sont les homomorphismes $\B_{U} \to \B_{V}$, 
+ou $E_{U} \to E_{V}$, qui correspondent à des morphismes de modèles\,? 
+Avec un peu de culot, on dirait\,{\tt [:]}
+\vskip .3cm
+{
+Conjecture fondamentale. --- \it Soient $U$, $V$ deux schémas de type
+fini sur $\mathbf{Q}$, $V$ séparé régulier, $U$ une variété élémentaire 
+anabélienne sur une extension finie de $\mathbf{Q}$. Considérons un morphisme
+$\B_V \to \B_U$ des topos étales sur $\mathbf{Q}$ -- ou, ce qui revient au
+même, un homomorphisme de groupes extérieurs 
+\[
+f\colon E_V = \pi_1(V) \;\to\; E_U = \pi_1(U)\; , 
+\]
+compatible avec les homomorphismes extérieurs dans $\Gamma_\mathbf{Q} =
+\pi_1(\mathbf{Q})$\footnote{{\bf NB} Pour l'unicité, on est ramené
+aussitôt au cas où $V$ lui-même est un modèle élémentaire anabélien,
+si \c{c}a nous chante.}.
+
+Conditions équivalentes {\tt [:]}
+\begin{itemize}
+\item[a)] Cet homomorphisme provient (à isomorphisme près) d'un
+morphisme $V\to U$ sur les modèles (qui est donc uniquement
+déterminé)
+\item[b)] $f|E_V^\circ$ est anabélien, i.e.\ l'image par $f$ de tout
+sous-groupe ouvert de $E_V^\circ$ a un centralisateur réduit à 1.
+\end{itemize}
+}
+%%%%%%%%%24
+Pour la nécessité de b), on est ramené aussitôt au cas où $V$ est
+réduit à un point, où cela se réduit à la
+\vskip .3cm
+{
+Conséquence conjecturale. --- \it Soit $\Gamma' \subset
+\operatorname{Im}(E_U \to \Gamma_{\mathbf{Q}})$ un sous-groupe ouvert,
+correspondant à un corps $k$ fini sur $\mathbf{Q}$, considérons un $k$-point
+de $U$, d'où un relèvement $\Gamma' \to E_U$, de sorte que $\Gamma'$
+opère sur $\pi_U$. Ceci posé, on a $\pi_U^{\Gamma'^\circ} = \{1\}$.
+}
+\vskip .3cm
+On étudiera par la suite les relations entre cette ``conséquence
+conjecturale'', et la précédente (d'apparence opposée\,!) concernant
+les $E_K$.
+
+La conjecture fondamentale sur les modèles implique la conjecture
+fondamentale sur les corps, à condition de prendre soin, dans cette
+dernière, de se limiter aux homomorphismes compatibles aux
+filtrations modéliques.\footnote{Et il vaut mieux se borner à
+l'équivalence de a) et b) --- la condition c) avec les
+centralisateurs risque de passer mal à la $\varprojlim$.}
+
+Plus généralement, prenant maintenant pour $U$ des schémas qui sont
+des $\varprojlim$ des modèles élémentaires anabéliens, avec
+morphismes de transition des immersions ouvertes affines (pour
+pouvoir passer à la $\varprojlim$ dans la catégorie des schémas),
+pour $V$ un schéma $\varprojlim$ de schémas séparés réguliers de type
+fini sur $\mathbf{Q}$ (morphismes de transition immersions ouvertes affines
+sans plus). Alors les morphismes \emph{dominants} de schémas $V \to
+U$ doivent correspondre aux homomorphismes extérieurs  $E_V \to E_U$
+compatibles avec les projections dans $E_\mathbf{Q} = \Gamma_\mathbf{Q}\,$, et telle
+que l'image soit ouverte. Par exemple, on pourrait prendre pour $U$,
+$V$ les spectres d'anneaux locaux réguliers essentiellement%~{[\tt ?]}
+de type fini sur $\mathbf{Q}$.
+
+\begin{center}
+---
+\end{center}
+
+Cette conjecture fondamentale (éventuellement revue et corrigée en
+cours de route\,!) étant admise, la question qui se pose ensuite est
+de déterminer les topos (pro)galoisiens sur $\B_{\mathbf{Q}}$ qui proviennent
+de modèles élémentaires anabéliens -- ou encore, les $\pi_U =
+\pi_1(\bar{U})$ de tels modèles étant connus, de déterminer quelles
+sont
+%%%%%%%%%25
+{\tt [les]} actions extérieures possibles de sous-groupes ouverts
+$\Gamma$ de $\Gamma_{\mathbf{Q}}$ sur de tels groupes fondamentaux -- et
+éventuellement question analogue pour d'autres types de groupes
+profinis, correspondant à des $\K(\pi, 1)$ qui se réaliseraient par
+des variétés algébriques (sur $\mathbf{C}$, disons), mais pas par des
+variétés élémentaires. (J'ai en vue autant des variétés modulaires,
+tels que, notamment, des variétés modulaires pour les courbes
+algébriques\,\dots) à partir de là, on reconstruirait par
+recollement, en termes profinis, tous les schémas lisses sur un corps
+de type fini sur $\mathbf{Q}$ (ou plutôt la catégorie de ceux-là), ou plus
+généralement, sur un corps quelconque --- puis, sans doute, par
+``recollement'', la catégorie des schémas localement de type fini sur
+un $K$ --- tant {\tt [?]} des {\tt [varier?]} la catégorie des
+fractions qui s'en déduit en rendant inversibles les homéomorphismes
+universels\,\dots
+
+Les réflexions précédentes suggèrent aussi des énoncés comme le
+suivant\,: Pour un schéma de base $S$ localement noethérien
+donné\footnote{$S$ de caractéristique $0$\,?}, les foncteurs 
+$ X \to  X_{\text{ét}}$, 
+%{\tt [plutôt $X \mapsto X_\text{ét}$\,?]} 
+allant de la catégorie des  schémas réduits localement de 
+présentation finis sur $S$, vers la $2$-catégorie des topos au-dessus
+de $ X_\text{ét}$, 
+%{\tt [plutôt de $\operatorname{Set}$?]}
+est $1$\nobreakdash-fidèle (deux  homomorphismes $f,g\colon
+ X\rightrightarrows Y$ tels que les morphismes de topos
+$f_\text{ét}\,,g_\text{ét}\colon X_\text{ét}\rightrightarrows
+Y_\text{ét}$ au-dessus de $\text{Set}$ soient isomorphes, sont égaux)
+et même peut-être \emph{pleinement fidèle}, quand on passe à la
+catégorie des fractions de $(\text{Sch}_\text{l.t.f.})/S$ obtenue en
+rendant inversibles les homéomorphismes universels\,\dots\ Exprimant
+ceci par exemple pour les automorphismes d'une courbe algébrique
+propre sur une extension fini de $\mathbf{Q}$, on retrouverait le ``fait''
+que tout automorphisme extérieur de $E_K$ ($K$ le corps des fonctions
+de $X$) qui respecte la structure à lacets {\tt [?]} et qui commute à
+l'action de $\Gamma$, provient d'un automorphisme de $ X$.
+
+
+
+
+
+
+
+
+
+% End
