@@ -5,18 +5,14 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: docker://blang/latex:ubuntu
+
     steps:
     - name: Get latest code
       uses: actions/checkout@v2
 
-    - name: Install TeX Live
-      run: |
-        sudo apt-get install -y texlive
-
     - name: Compile LaTeX
-      run: |
-        xelatex -interaction=nonstopmode main.tex
-        xelatex -interaction=nonstopmode main.tex
+      run: xelatex -interaction=nonstopmode main.tex
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v2
