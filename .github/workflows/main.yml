@@ -1,6 +1,9 @@
-name: PDF release (via LaTeX)
+name: Build and Deploy LaTeX PDF
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -8,32 +11,35 @@ jobs:
     container: docker://blang/latex:ubuntu
 
     steps:
-    - name: Get latest code
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Compile LaTeX
-      run: xelatex -interaction=nonstopmode main.tex
+      - name: Compile LaTeX
+        run: xelatex -interaction=nonstopmode main.tex
 
-    - name: Upload PDF artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: pdf_file
-        path: main.pdf
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pdf_file
+          path: main.pdf
 
   deploy:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     needs: [build]
+
     steps:
       - name: Set variables
         id: vars
         run: |
           echo "::set-output name=date::$(date +'%Y-%m-%d')"
           echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
+
       - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
           name: pdf_file
+
       - name: Create release
         uses: actions/create-release@v1
         id: create_release
@@ -44,6 +50,7 @@ jobs:
           release_name: Automatic build (version ${{ steps.vars.outputs.date }})
           draft: false
           prerelease: false
+
       - name: Upload PDF asset
         uses: actions/upload-release-asset@v1
         env:
